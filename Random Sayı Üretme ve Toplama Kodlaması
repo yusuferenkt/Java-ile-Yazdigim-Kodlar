@@ -1,0 +1,42 @@
+import.java.util.Random;
+
+public class uretRandom{
+
+public static void main(String[] args) {
+  
+  Random r=new Random();
+  
+  Scanner giris=new Scanner(System.in);
+
+  int sayi1,sayi2,sonuc,puan=0;
+  char secim;
+
+  do{
+    sayi1=r.nextInt(101);
+    sayi2=r.nextInt(101);
+
+    System.out.println("Bu Sayıların Toplamı Kaçtır?");
+    System.out.println(sayi1);
+    System.out.println(sayi2);
+
+    System.out.println("Sayıların Toplamını Giriniz:");
+    sonuc=giris.nextInt();
+
+    if(sonuc==sayi1+sayi2)
+      {
+      System.out.println("Tebrikler Doğru Tahmin Ettiniz.");
+      puan+=5;
+      }
+
+    else
+      {
+      System.out.println("Üzgünüm Doğru Tahmin Edemediniz.");
+      puan-=2;
+      }
+
+    System.out.println("Puanınız:"+puan);
+    System.out.println("Tekrar Oynamak İstiyormusunuz?(e/E)");
+    secim=giris.next().charAt(0);
+    }while(secim=='e' || secim=='E');
+
+  }}
