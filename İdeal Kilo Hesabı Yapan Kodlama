@@ -1,0 +1,52 @@
+public class idealKilo{
+
+public static void main(String[] args) {
+
+double boy,yas,kilo,idealkilo,fark;
+String cinsiyet;
+
+Scanner giris=new Scanner(System.in);
+
+System.out.println("Cinsiyetinizi Girin:");
+cinsiyet=giris.nextLine();
+
+System.out.println("Boyunuzu Girin:");
+boy=giris.nextDouble();
+
+System.out.println("Yaşınızı Girin:");
+yas=giris.nextDouble();
+
+System.out.println("Kilonuzu Girin:);
+kilo=giris.nextDouble();
+
+if(cinsiyet=="E")
+{
+idealkilo=(boy-100+yas/10)*0.9;
+}
+
+else
+{
+idealkilo=(boy-100+yas/10)*0.8;
+}
+
+System.out.println("İdeal Kilonuz:"+idealkilo);
+
+if(idealkilo==kilo)
+{
+System.out.println("İdeal Kilonuzdasınız.");
+}
+
+if(idealkilo>kilo)
+{
+fark=idealkilo-kilo;
+System.out.println("Kilo Almalısınız."+fark);
+}
+
+if(idealkilo<kilo)
+{
+fark=kilo-idealkilo;
+System.out.println("Kilo Vermelisiniz."+fark);
+}
+
+}}
+
