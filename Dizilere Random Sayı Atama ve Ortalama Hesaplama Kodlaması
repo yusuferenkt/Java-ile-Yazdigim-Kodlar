@@ -1,0 +1,37 @@
+import.java.util.Random;
+
+public class uretRandom{
+
+public static void main(String[] args) {
+
+int adet=0;adet1=0;toplam=0,ortalama=0;
+int[]dizi=new int[100];
+
+for(int i=0; i<dizi.length; i++)
+{
+dizi[i]=(int)(Math.random()*200);
+System.out.println(ddizi[i]);
+}
+
+for(int i=0; i<dizi.length; i++)
+{
+if(dizi[i]>100
+{
+adet++;
+}
+}
+
+System.out.println("Adet:"+adet);
+for(int i=0; i<dizi.length; i++)
+{
+if(dizi[i]<100)
+{
+adet1++;
+toplam+=dizi[i];
+}
+}
+
+ortalama=toplam/adet1;
+System.out.println("Ortalama:"+ortalama);
+
+}}
